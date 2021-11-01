@@ -1,16 +1,15 @@
+/*----------------------------HEADER------------------------------*/
+
 header{
     background-color: #000;
-    height: 185px;
+    height: 195px;
 }
 
 .img-logo-studio img{
     height: 180px;
     position: relative;
-    
-}
-
-.container-head-title{  
-    
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .container-head-title h1{
@@ -18,7 +17,7 @@ header{
     text-align: center;
     position: absolute;
     top: 5%;
-    left: 37.5%;
+    left: 36.5%;
     font-family: 'Lobster', cursive;
     font-size: 115px;
     color: #FFFDDF;
@@ -30,8 +29,39 @@ header{
     display: inline-block;
     margin: 0;
     position: relative;
-    left: 1080px;
+    left: 1060px;
     top: -100px;
     font-family: 'Crimson Pro', serif;
     font-size: 20px;
 }
+
+/*---------------------------------------NAV--------------------------------------------------*/
+
+nav{
+    height: 40px;
+    position: sticky;
+    top: 185px;
+    width: 100%;
+    text-align: right;
+    background-color: #000000;
+    border: 1px solid #FFFED9;
+}
+
+nav>ul{
+    margin: 0;
+}
+
+nav>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 125px 0 0;
+}
+
+nav>ul>li>a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Crimson Pro', serif;
+    text-shadow: -2px -1px 0 #000;
+}
+
