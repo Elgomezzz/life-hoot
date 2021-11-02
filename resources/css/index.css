@@ -180,9 +180,25 @@ nav>ul>li>a{
  object-fit: fill;
 }
 
+/*-------------------------------------BENEFICIOS---------------------------*/
 
+.item-one,
+.item-two,
+.item-three,
+.item-four,
+.item-five,
+.item-six{
+    height: 60px;
+    width: 60px;
+}
 
+.title-beneficios h2{
+    margin: 0;
+    text-align: center;
+}
 
-
-
+.list-beneficios div{
+    display: inline-block;
+    
+}
 
