@@ -39,12 +39,13 @@ header{
 
 nav{
     height: 40px;
-    position: sticky;
-    top: 185px;
-    width: 100%;
+    position:sticky;
+    top: 0;
+    width: 1349px;
     text-align: right;
     background-color: #000000;
     border: 1px solid #FFFED9;
+    z-index: 1;
 }
 
 nav>ul{
@@ -64,4 +65,124 @@ nav>ul>li>a{
     font-family: 'Crimson Pro', serif;
     text-shadow: -2px -1px 0 #000;
 }
+
+/*------------------------------IMAGE-MODEL------------------------*/
+
+.img-model-index {
+    height: 600px;
+    width: 1349px;
+}
+
+.img-model-index div{
+    height: inherit;
+    width: inherit;
+}
+
+.container-img-model img{
+    object-fit: fill;
+}
+
+.container-img-model span{
+    position: relative;
+    top: -300px;
+}
+
+.container-img-model span>p{
+    margin: 0;
+    text-align: center;
+    background-color: #00000098;
+    height: 50px;
+    padding-top: 9.5px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;
+}
+
+/*-------------------------------------QUIENES-SOMOS-----------------------*/
+
+.quienes-somos{
+    margin-top: 2px;
+    height: 350px;
+    width: 1349px;
+    background-image: url(../img/background-conatiner-quienes.jpg);
+}
+
+.container-quienes-somos{
+    height: inherit;
+    width: inherit;
+}
+
+.title-quienes h2{
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.txt-quienes{
+    display: inline-block;
+    margin: 25px 0 0 80px;
+}
+
+.txt-quienes p{
+    margin: 0;
+    padding-top: 43.5px;
+    color: #fff;
+    height: 250px;
+    width: 400px;
+    border: 1px solid #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contain-image-compain{
+    position: relative;
+    margin: 0;
+    height: 250px;
+    width: 350px;
+    border: 1px solid #fff;
+    left: 780px;
+    top: -248.5px;
+}
+
+/*---------------------------------------SCROLL-IMAGE-MODELS------------------------*/
+
+.scroll-img-models{
+    height: 280px;
+    width: 1349px;
+    position: relative;
+}
+
+.container-scroll-img-models{
+    height: inherit;
+    width: inherit;
+}
+
+.container-scroll-img-models div{
+    height: 230px;
+    width: 280px;
+    display: inline-block;
+    margin: 25px 0 0 45px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75), -1px -1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-scroll-img-models div>img{
+    height: inherit;
+    width: inherit;
+
+}
+
+.img-model-one, 
+.img-model-two, 
+.img-model-three, 
+.img-model-four{
+ object-fit: fill;
+}
+
+
+
+
+
+
 
