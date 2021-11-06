@@ -131,7 +131,7 @@ nav>ul>li>a{
     color: #fff;
     height: 250px;
     width: 400px;
-    border: 1px solid #fff;
+    border: 3.5px double #fff;
     font-size: 22px;
     text-align: center;
 }
