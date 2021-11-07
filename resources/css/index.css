@@ -182,14 +182,8 @@ nav>ul>li>a{
 
 /*-------------------------------------BENEFICIOS---------------------------*/
 
-.item-one,
-.item-two,
-.item-three,
-.item-four,
-.item-five,
-.item-six{
-    height: 60px;
-    width: 60px;
+.beneficios{
+    width: 1349px;
 }
 
 .title-beneficios h2{
@@ -199,6 +193,20 @@ nav>ul>li>a{
 
 .list-beneficios div{
     display: inline-block;
-    
+    border: 1px solid red;
+    width: 280px;
+    height: 250px;
+    margin: 45px 0 0 138px;
 }
 
+.item-one,
+.item-two,
+.item-three,
+.item-four,
+.item-five,
+.item-six{
+    height: 60px;
+    width: 60px;
+    margin: 25px 0 0 10px;
+}
+    
