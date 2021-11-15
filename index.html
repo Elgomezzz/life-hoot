@@ -4,58 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/css/normalize.css">
-    <link rel="stylesheet" href="resources/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.png">
     <meta name="theme-color" content="#0000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/index.css">
     <title>Life Hoot | Studio Webcam</title>
 </head>
 <body>
     <header>
-        <span class="img-logo-studio">
+        <div class="img-logo-studio">
             <img src="resources/img/vector_logo.png" alt="logo-studio">
-        </span>
-        <div class="container-head-title container-head-text">
-            <h1>Life Hoot</h1>
-            <p>Estudio de Modelaje Webcam</p>
+        </div>
+        <div class="container-elements-head">
+            <div class="head-title">
+                <h1>Life Hoot</h1>
+            </div>
+            <div class="reference-page">
+                <p>Estudio de Modelaje Webcam</p>
+            </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html"> Inicio </a></li>
-            <li><a href="resources/views/we.html"> Nosotros </a></li>
-            <li><a href="resources/views/installations.html"> Instalaciones </a></li>
-            <li><a href="resources/views/work.html"> Trabaja con Nosotros </a></li>
-            <li><a href="resources/views/contact.html"> Contactenos </a></li>
+    <nav class="nav-content">
+        <ul class="nav-list-items">
+            <li class="nav-item"><a href="index.html"> Inicio </a></li>
+            <li class="nav-item"><a href="resources/views/we.html"> Nosotros </a></li>
+            <li class="nav-item"><a href="resources/views/installations.html"> Instalaciones </a></li>
+            <li class="nav-item"><a href="resources/views/work.html"> Trabaja con Nosotros </a></li>
+            <li class="nav-item"><a href="resources/views/contact.html"> Contactenos </a></li>
         </ul>
     </nav>
     <main>
         <section class="img-model-index">
             <div class="container-img-model">
-                <img src="resources/img/woman01.jpg" alt="models" width="1349px" height="600px">
-                <span><p>"Frase Motivacion".</p></span>
+                <div class="text-model-index">
+                    <p>"Frase Motivacion".</p>
+                </div>
             </div>
         </section>
-        <section class="quienes-somos">
-            <div class="container-quienes-somos">
-                <div class="title-quienes">
-                    <h2>¿Quienes Somos?</h2>
-                </div>
-                <div class="txt-quienes">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Odio asperiores quisquam vel corporis quaerat blanditiis commodi 
-                    nulla dolores ratione ab maxime veniam deserunt, est sed natus, 
-                    mollitia quis unde. Atque!
-                    </p>
+        <section class="who-we-are">
+            <div class="container-who-we-are">
+                <div class="content-who-we-are">
+                    <div class="title-we-are">
+                        <h2>¿Quienes Somos?</h2>
+                    </div>
+                    <div class="txt-we-are">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odio asperiores quisquam vel corporis quaerat blanditiis commodi 
+                        nulla dolores ratione ab maxime veniam deserunt, est sed natus, 
+                        mollitia quis unde. Atque!
+                        </p>
+                    </div>
                 </div>
                 <div class="contain-image-compain">
-                    <span>
-                        <img src="#" alt="img-compain">
-                    </span>
+                    <img src="#" alt="img-compain">
                 </div>
             </div>
         </section>
@@ -236,4 +240,5 @@
         </section>
     </footer>
 </body>
+<script src="/resources/js/index.js"></script>
 </html>
