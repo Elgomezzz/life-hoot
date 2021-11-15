@@ -30,6 +30,7 @@ header{
     max-width: 100%;
     margin-top: 25%;
     margin-left: 55%;
+    filter: drop-shadow(-2px 3px 8px #37009c);
 }
 
 .container-elements-head{
@@ -48,6 +49,7 @@ header{
     padding-top: 2%;
     font-family: 'Lobster', cursive;
     font-size: 5rem;
+    text-shadow: -4px 4px 2px #000, -3px -3px 3px #000, 3px 5px 4px #000;
 }
 
 .reference-page p{
