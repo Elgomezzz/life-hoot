@@ -110,7 +110,6 @@ header{
     width: 100%;
     background-image: url(../img/woman01.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .text-model-index{
@@ -189,4 +188,103 @@ header{
     border: 1px solid #000;
     outline: 1px solid #fff;
     outline-offset: 3.5px;
+}
+
+/*SECTION-SCROLL-IMG-MODELS*/
+
+.scroll-img-models{
+    width: 100%;
+    height: 39vh;
+}
+
+.container-scroll-img-models{
+    width: inherit;
+    height: inherit;
+}
+
+.img-slide-wrap{
+    height: 30vh;
+    width: 22vw;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1.7rem;
+    padding: 2px;
+    border: 1px solid #949494;
+    outline: 1px solid #000;
+    outline-offset: 3.5px;
+}
+
+.img-model-one{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/woman01.jpg);
+    background-size: cover;
+}
+
+.img-model-two{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/woman02.jpg);
+    background-size: cover;
+}
+
+.img-model-three{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/woman01.jpg);
+    background-size: cover;
+}
+
+.img-model-four{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/woman02.jpg);
+    background-size: cover;
+}
+
+.buttons{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.btn-one,
+.btn-two,
+.btn-three,
+.btn-four{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+/*SECTION-BENEFICIOS*/
+
+.beneficios{
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/background-conatiner-quienes.jpg);
+    background-size: cover;
+}
+
+.container-beneficios{
+    height: 100%;
+    width: 100%;
+}
+
+.title-beneficios{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.title-beneficios h2{
+    padding: 8px;
+}
+
+.list-beneficios{
+    height: 100%;
+    width: 100%;
 }
