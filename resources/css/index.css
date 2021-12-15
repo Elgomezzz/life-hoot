@@ -8,15 +8,6 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*----------------------------HEADER------------------------------*/
 
 header{
@@ -298,4 +289,54 @@ header{
 .list-beneficios{
     height: 100%;
     width: 100%;
+}
+
+.logo-beneficio-item1,
+.logo-beneficio-item2,
+.logo-beneficio-item3,
+.logo-beneficio-item4,
+.logo-beneficio-item5,
+.logo-beneficio-item6{
+    width: 40px;
+    height: 50px;
+}
+
+.beneficio-item1,
+.beneficio-item2,
+.beneficio-item3,
+.beneficio-item4,
+.beneficio-item5,
+.beneficio-item6{
+    border: .5px solid #000;
+    display: inline-block;
+    width: 350px;
+    height: 165px;
+    margin-left: 4.5rem;
+    outline: 1px solid #fff;
+    outline-offset: 3.5px;
+}
+
+.beneficio-item1,
+.beneficio-item2,
+.beneficio-item3{
+    margin-top: .7rem;
+}
+
+.beneficio-item4,
+.beneficio-item5,
+.beneficio-item6{
+    margin-top: 1.8rem;
+}
+
+
+.item-one,
+.item-two,
+.item-three,
+.item-four,
+.item-five,
+.item-six{
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    background-color: #fff;
 }
