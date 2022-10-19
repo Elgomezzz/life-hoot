@@ -1,7 +1,9 @@
 name: Release Tag Latest
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - latest
 

@@ -1,7 +1,9 @@
 name: Release Tag PACTH
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - qa
 
