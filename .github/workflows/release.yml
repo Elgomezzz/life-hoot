@@ -1,11 +1,11 @@
-name: Release Tag MINOR
+name: Release Tag MAJOR
 
 on:
   pull_request:
     types:
       - closed
     branches:
-      - staging
+      - maste
 
 
 jobs:
@@ -15,6 +15,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: rymndhng/release-on-push-action@master
+        env:
+          semantic-version: major
         with:
-          bump_version_scheme: minor
+          bump_version_scheme: ${{ env.semantic-version }}
           tag_prefix: v
