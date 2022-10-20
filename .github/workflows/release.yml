@@ -6,8 +6,7 @@ on:
       - closed
     branches:
       - master
-    tags:
-      - v*
+      
 jobs:
   tag:
     runs-on: ubuntu-latest
