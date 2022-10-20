@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag Minor or Patch
         if: github.event.pull_request.merged
-        id: tag
+        id: tags
         uses: K-Phoen/semver-release-action@master
         with:
           release_branch: master
