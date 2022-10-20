@@ -1,4 +1,4 @@
-name: Release Tag Latest
+name: "Release"
 
 on:
   pull_request:
@@ -6,15 +6,28 @@ on:
       - closed
     branches:
       - latest
-
-
+      
 jobs:
-  release-on-push:
+  tag:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: rymndhng/release-on-push-action@master
+      - name: Tag
+        if: github.event.pull_request.merged
+        id: tag
+        uses: K-Phoen/semver-release-action@master
         with:
-          bump_version_scheme: norelease
-          tag_prefix: v
+          release_branch: latest
+          release_strategy: none
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        if: github.event.pull_request.merged
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          release_name: ${{ steps.tag.outputs.tag }}
+          draft: false
+          prerelease: false
