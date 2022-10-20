@@ -1,4 +1,4 @@
-name: Release Tag MAJOR
+name: Release Tag
 
 on:
   pull_request:
@@ -9,14 +9,14 @@ on:
 
 
 jobs:
-  release-on-push:
+  tag:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: rymndhng/release-on-push-action@master
         env:
-          semantic-version: major
+          semantic-version: patch
         with:
           bump_version_scheme: ${{ env.semantic-version }}
           tag_prefix: v
