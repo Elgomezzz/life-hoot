@@ -6,7 +6,7 @@ on:
       - closed
     branches:
       - master
-
+      
 jobs:
   tag:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
         id: tag
         uses: K-Phoen/semver-release-action@master
         with:
-          release_branch: latest
+          release_branch: master
           release_strategy: tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -27,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v4.0.1
+          tag_name: ${{ steps.tag.outputs.tag }}
           release_name: ${{ steps.tag.outputs.tag }}
           draft: false
-          prerelease: true
+          prerelease: false
