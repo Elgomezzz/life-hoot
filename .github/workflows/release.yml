@@ -18,17 +18,9 @@ jobs:
         with:
           release_branch: master
           release_strategy: tag
-          tag_format: "v%major%"
+          tag: "v%major%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Tag Minor or Patch
-        if: github.event.pull_request.merged
-        id: tags
-        uses: K-Phoen/semver-release-action@master
-        with:
-          release_branch: master
-          release_strategy: tag
-          tag_format: "v*.%minor%.%patch%"
       - name: Create Release
         if: github.event.pull_request.merged
         id: create-release
