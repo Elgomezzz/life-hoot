@@ -3,7 +3,7 @@ name: "Tag"
 on:
   pull_request:
     types:
-      - opened
+      - closed
     branches:
       - master
       
@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.tag.outputs.tag }}
+          tag_name: "v%major%.%minor%.%patch%"
           release_name: ${{ steps.tag.outputs.tag }}
           draft: false
           prerelease: false
