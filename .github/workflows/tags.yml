@@ -3,7 +3,7 @@ name: "Release Tags"
 on:
   pull_request:
     types:
-      - labeled
+      - closed
     branches:
       - master
       
@@ -17,8 +17,8 @@ jobs:
         uses: K-Phoen/semver-release-action@master
         with:
           release_branch: master
-          release_strategy: release
-          tag: v13
+          release_strategy: tag
+          tag_format: "v*.%minor%.%patch%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
