@@ -18,7 +18,7 @@ jobs:
         with:
           release_branch: master
           release_strategy: tag
-          tag_format: "v%major%"
+          tag_format: "v%major%.%minor%.%patch%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: "v%major%.%minor%.%patch%"
-          release_name: ${{ steps.tag.outputs.tag }}
+          tag_name: ${{ steps.tag.outputs.tag }}
+          release_name: v%major%
           draft: false
           prerelease: false
