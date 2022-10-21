@@ -3,7 +3,7 @@ name: "Tag"
 on:
   pull_request:
     types:
-      - closed
+      - opened
     branches:
       - master
       
@@ -21,3 +21,14 @@ jobs:
           tag_format: "v%major%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        if: github.event.pull_request.merged
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          release_name: ${{ steps.tag.outputs.tag }}
+          draft: false
+          prerelease: false
