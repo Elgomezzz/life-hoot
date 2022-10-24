@@ -11,17 +11,17 @@ jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
-      - name: Tag Major
+      - name: Tag
         if: github.event.pull_request.merged
         id: tag
         uses: K-Phoen/semver-release-action@master
         with:
           release_branch: master
-          release_strategy: tag
-          tag: v18
+          release_strategy: release
+          tag_format: "v%major%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Create Release
+      - name: Release
         if: github.event.pull_request.merged
         id: create-release
         uses: actions/create-release@v1
