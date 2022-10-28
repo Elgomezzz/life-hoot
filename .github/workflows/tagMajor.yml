@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tag
+        if: github.event.pull_request.merged
         id: tag
         uses: K-Phoen/semver-release-action@master
         with:
           release_branch: master
-          release_strategy: tag
+          release_strategy: release
+          tag_format: "v%major%"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
