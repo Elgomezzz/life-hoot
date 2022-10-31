@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - release
+      - major
       
 jobs:
   tag:
@@ -16,7 +16,7 @@ jobs:
         id: tag
         uses: K-Phoen/semver-release-action@master
         with:
-          release_branch: release
+          release_branch: major
           release_strategy: release
           tag_format: "v%major%"
         env:
